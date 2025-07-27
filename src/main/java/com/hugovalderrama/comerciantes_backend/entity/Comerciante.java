@@ -15,6 +15,7 @@ import java.time.LocalDate;
 public class Comerciante {
     @Id
     @Column(name = "id_comerciante")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @Column(name = "nombre_razon_social", nullable = false, length = 150)
